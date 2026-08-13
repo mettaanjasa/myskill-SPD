@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/articles");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/articles`);
         const data = await response.json();
         
         if (!response.ok) {

@@ -21,8 +21,8 @@ function Article() {
     const fetchArticles = async () => {
         try {
             const [articleResponse, articlesResponse] = await Promise.all([
-                fetch(`http://localhost:5001/api/articles/${id}`),
-                fetch("http://localhost:5001/api/articles"),
+                fetch(`${import.meta.env.VITE_API_URL}/api/articles/${id}`),
+                fetch(`${import.meta.env.VITE_API_URL}/api/articles`),
             ]);
 
             const articleData = await articleResponse.json();

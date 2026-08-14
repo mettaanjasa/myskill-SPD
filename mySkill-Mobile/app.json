@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "mySkill-Mobile",
+    "slug": "mySkill-Mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/mySkill.png",
+    "scheme": "myskillmobile",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "web": {
+      "output": "static",
+      "favicon": "./assets/mySkill.png"
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
